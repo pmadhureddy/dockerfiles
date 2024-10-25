@@ -1,4 +1,5 @@
-FROM almalinux:9
+ARG version
+FROM almalinux:${version:-9}
 ARG course="Devops with AWS" \
     trainer="siva kumar reddy" \
     duartion="120 hrs"
