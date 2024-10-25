@@ -2,7 +2,7 @@ ARG version
 FROM almalinux:${version:-9}
 ARG course="Devops with AWS" \
     trainer="siva kumar reddy" \
-    duartion="120 hrs"
-ENV duration=$duartion
-RUN echo "Course : $course, duartion is $duartion"
+    duration="120 hrs"
+ENV duration=$duration
+RUN echo "Course : $course, duration is $duration"
 CMD ["sleep", "100"]
